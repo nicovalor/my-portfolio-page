@@ -1,13 +1,17 @@
+import style from './NavigationBar.module.css'
+
 const NavitationBar = (): JSX.Element => {
     return <>
-        <div className="nav">
+        <div className={style.nav}>
             <div className="logo">
-                <h2 className="nav-logo">Nico</h2>
+                <h2 className={style.navLogo}>Nico</h2>
             </div>
             <div className="buttons">
-                <div className="nav-bttn">Work</div>
-                <div className="nav-bttn">About</div>
-                <div className="nav-bttn">Contact</div>
+                <ul>
+                    <li className={style.navBttn}>Work</li>
+                    <li className={style.navBttn}>About</li>
+                    <li className={style.navBttn}>Contact</li>
+                </ul>
             </div>
         </div>
     </>
