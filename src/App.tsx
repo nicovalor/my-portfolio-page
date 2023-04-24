@@ -1,10 +1,10 @@
-import './App.css'
+import NavigationBar from './components/NavigationBar/NavigationBar'
 
 function App() {
 
   return (
     <>
-      <h1>NICO</h1>
+      <NavigationBar />
     </>
   )
 }

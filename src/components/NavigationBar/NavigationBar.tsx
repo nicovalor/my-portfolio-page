@@ -1,12 +1,12 @@
 import style from './NavigationBar.module.css'
 
-const NavitationBar = (): JSX.Element => {
+const NavigationBar = (): JSX.Element => {
     return <>
         <div className={style.nav}>
-            <div className="logo">
+            <div className={style.logo}>
                 <h2 className={style.navLogo}>Nico</h2>
             </div>
-            <div className="buttons">
+            <div className={style.buttons}>
                 <ul>
                     <li className={style.navBttn}>Work</li>
                     <li className={style.navBttn}>About</li>
@@ -17,4 +17,4 @@ const NavitationBar = (): JSX.Element => {
     </>
 }
 
-export default NavitationBar
+export default NavigationBar
