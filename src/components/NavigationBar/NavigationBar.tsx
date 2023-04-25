@@ -4,7 +4,7 @@ const NavigationBar = (): JSX.Element => {
     return <>
         <div className={style.nav}>
             <div className={style.logo}>
-                <h2 className={style.navLogo}>Nico</h2>
+                <img className={style.image} src="src\assets\nico-small-logo-nico.svg" alt="logo" />
             </div>
             <div className={style.buttons}>
                 <ul>
