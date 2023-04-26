@@ -3,7 +3,9 @@ import style from "./CardsContainer.module.css"
 const CardsContainer = (): JSX.Element => {
 
     return <>
-        <div className={style.container}></div>
+        <div className={style.container}>
+
+        </div>
     </>
 }
 

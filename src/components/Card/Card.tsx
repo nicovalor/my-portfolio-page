@@ -1,8 +1,16 @@
 import style from './Card.module.css'
-
-const Card = (): JSX.Element => {
+type CardProps = {
+    title: string;
+    image: string;
+    description: string;
+}
+const Card = ({ title, image, description }: CardProps): JSX.Element => {
     return <>
-        <div className={style.container}></div>
+        <div className={style.container}>
+            <img src={image} alt={description} />
+            <h2>{title}</h2>
+            <p>{description}</p>
+        </div>
     </>
 }
 
