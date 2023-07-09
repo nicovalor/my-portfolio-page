@@ -1,7 +1,7 @@
 import CardsContainer from './components/CardsContainer/CardsContainer'
 import HomeView from './components/HomeView/HomeView'
 import NavigationBar from './components/NavigationBar/NavigationBar'
-import { Routes, Route } from 'react-router'
+import { Routes } from 'react-router'
 
 function App() {
 
@@ -10,7 +10,6 @@ function App() {
     <>
       <NavigationBar />
       <HomeView />
-      <CardsContainer />
       <Routes>
 
       </Routes>

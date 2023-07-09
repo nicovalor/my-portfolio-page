@@ -1,6 +1,21 @@
 .container {
-    width: 90%;
-    height: 400px;
-    top: 100%;
-    z-index: 3
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    z-index: 3;
+    position: block;
+}
+
+.slide-in {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-out {
+    transform: translateY(50rem);
+    opacity: 0;
 }
