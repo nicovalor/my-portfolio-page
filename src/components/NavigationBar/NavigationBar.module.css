@@ -23,6 +23,33 @@ ul {
 li {
     font-family: 'Nunito', sans-serif;
     padding: .8rem;
+    position: relative;
+    display: inline-block;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* Puedes cambiar el color del subrayado aquí */
+    transform: scaleX(0);
+    /* Inicialmente oculto */
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave */
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+/* Estilo para animar el subrayado cuando se hace hover */
+li:hover::after {
+    transform: scaleX(1);
+    /* Mostrar el subrayado al hacer hover */
 }
 
 .logo {
