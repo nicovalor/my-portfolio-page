@@ -1,16 +1,26 @@
-import style from './NavigationBar.module.css'
+import style from './NavigationBar.module.css';
+import { Link } from 'react-router-dom';
+
 
 const NavigationBar = (): JSX.Element => {
     return <>
         <div className={style.nav}>
-            <div className={style.logo}>
-                <img className={style.image} src="src\assets\nico-small-logo-nico.svg" alt="logo" />
-            </div>
+            <Link to="/">
+                <div className={style.logo}>
+                    <img className={style.image} src="src\assets\nico-small-logo-nico.svg" alt="logo" />
+                </div>
+            </Link>
             <div className={style.buttons}>
                 <ul>
-                    <li className={style.navBttn}>Work</li>
-                    <li className={style.navBttn}>About</li>
-                    <li className={style.navBttn}>Contact</li>
+                    <Link to='/work' className={style.liLink}>
+                        <li className={style.navBttn}>Work</li>
+                    </Link>
+                    <Link to='/about' className={style.liLink}>
+                        <li className={style.navBttn}>About</li>
+                    </Link>
+                    <Link to='/contact' className={style.liLink}>
+                        <li className={style.navBttn}>Contact</li>
+                    </Link>
                 </ul>
             </div>
         </div>

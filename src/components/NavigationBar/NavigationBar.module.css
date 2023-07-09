@@ -27,6 +27,11 @@ li {
     display: inline-block;
 }
 
+.liLink {
+    text-decoration: none;
+    color: inherit;
+}
+
 li::after {
     content: "";
     position: absolute;
